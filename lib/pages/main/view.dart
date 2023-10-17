@@ -1,8 +1,7 @@
 part of main_page;
 
-// ignore: camel_case_types
-class mainPage extends StatelessWidget {
-  const mainPage({super.key});
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
