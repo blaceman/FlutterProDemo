@@ -8,7 +8,7 @@ class GlobalService extends GetxService {
       GlobalService.to.userModel.phoneNum != null &&
       GlobalService.to.userModel.phoneNum!.isNotEmpty;
 
-  ValueNotifier<bool> loginAction = ValueNotifier<bool>(false);
+  ValueNotifier<bool> loginAction = ValueNotifier<bool>(false); //也可以使用obx刷新数据
 
   void saveUser(String phone, String code) {
     userModel.phoneNum = phone;
