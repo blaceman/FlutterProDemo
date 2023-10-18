@@ -12,13 +12,9 @@ class MainPage extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           controller: controller.pageController,
           onPageChanged: controller.onPageChanged,
-          children: [
-            Container(
-              color: Colors.orange,
-            ),
-            Container(
-                // color: Colors.blue,
-                )
+          children: const [
+            HomePage(),
+            MinePage(),
           ],
         ),
         bottomNavigationBar: GetBuilder<MainController>(

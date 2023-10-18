@@ -39,6 +39,23 @@ dependencies:
   get: 4.6.5
   #flutter 屏幕适配方案，用于调整屏幕和字体大小的flutter插件，让你的UI在不同尺寸的屏幕上都能显示合理的布局!
   flutter_screenutil: 5.8.4
+  #安卓动态权限获取
+  permission_handler: 10.4.3
+  #相册访问
+  image_picker: 1.0.3
+  #打印log
+  logger: 1.4.0
+  #沙盒路径
+  path_provider: 2.1.1
+  #日期格式化等
+  intl: 0.18.0
+
+#UI
+  modal_bottom_sheet: 3.0.0-pre
+  flutter_picker: 2.1.0
+  extended_image: 8.1.1
+  easy_refresh: 3.3.2+1
+  flutter_easyloading: 3.0.5
 
 
 

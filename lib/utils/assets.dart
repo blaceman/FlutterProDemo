@@ -6,3 +6,7 @@ abstract class AssetImages {
   static const tabBar1Active = 'assets/images/tab_bar_1_active.png';
   static const tabBar2Active = 'assets/images/tab_bar_2_active.png';
 }
+
+abstract class AssetIcons {
+  static const search = IconData(0xe60e, fontFamily: 'icon');
+}

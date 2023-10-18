@@ -2,6 +2,8 @@ library main_page;
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:project_demo/pages/home/index.dart';
+import 'package:project_demo/pages/mine/index.dart';
 import 'package:project_demo/string_res/index.dart';
 import 'package:project_demo/utils/index.dart';
 

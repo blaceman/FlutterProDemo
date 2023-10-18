@@ -4,6 +4,8 @@ import 'package:get/route_manager.dart';
 import 'package:project_demo/global_controller.dart';
 import 'package:project_demo/routers/index.dart';
 import 'package:project_demo/string_res/index.dart';
+import 'package:project_demo/theme.dart';
+import 'package:project_demo/widgets/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,10 +34,8 @@ class MyApp extends StatelessWidget {
                   locale: const Locale('zh', 'CN'),
                   fallbackLocale: const Locale('en', 'US'),
                   initialBinding: GlobalControllerBinding(),
-                  theme: ThemeData(
-                    primarySwatch: Colors.blue,
-                  ),
-                  // builder: EasyLoading.init(),
+                  theme: ThemeData(colorSchemeSeed: AppTheme.primary),
+                  builder: CustomToast.init(),
                 ));
       },
     );
