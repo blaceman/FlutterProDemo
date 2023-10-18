@@ -5,8 +5,9 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = MainController();
     return GetBuilder<MainController>(
-      init: MainController(),
+      init: controller,
       builder: (controller) => Scaffold(
         body: PageView(
           physics: const NeverScrollableScrollPhysics(),

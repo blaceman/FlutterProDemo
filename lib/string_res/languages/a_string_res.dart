@@ -8,4 +8,8 @@ class SR {
   static const input = 'input';
   static const phoneNum = 'phoneNum';
   static const code = 'code';
+  static const tipPhoneNum = 'tipPhoneNum';
+  static const tipCode = 'tipCode';
+  static const success = 'success';
+  static const alreadyLogin = 'already login';
 }

@@ -19,4 +19,8 @@ class MineController extends GetxController {
     // TODO: implement onClose
     super.onClose();
   }
+
+  void updateUI() {
+    update();
+  }
 }

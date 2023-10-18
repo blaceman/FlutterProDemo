@@ -4,7 +4,7 @@ part of utils;
 //     ? 'http://api.app.xsyy.beijingliuli.top'
 //     : 'http://csxsyyapi.beijingliuli.top';
 
-// const String kServerUrl = 'http://api.app.xsyy.beijingliuli.top';
+const String kServerUrl = 'http://api.app.xsyy.beijingliuli.top';
 
 // const String kLocalToken = 'local_token';
 // const String kLocalThemeMode = 'local_theme_mode';

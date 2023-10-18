@@ -6,6 +6,10 @@ const enUSRes = {
   SR.mine: 'mine',
   SR.login: 'login',
   SR.input: 'input',
+  SR.success: 'success',
   SR.phoneNum: 'phoneNumber',
   SR.code: 'code',
+  SR.tipPhoneNum: 'the phone number is incorrect',
+  SR.tipCode: 'the code is incorrect',
+  SR.alreadyLogin: 'already login'
 };

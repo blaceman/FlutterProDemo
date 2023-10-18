@@ -15,10 +15,4 @@ class MainController extends GetxController {
     currentPage = page;
     update(['navigation']);
   }
-
-  @override
-  void onClose() {
-    pageController.dispose();
-    super.onClose();
-  }
 }

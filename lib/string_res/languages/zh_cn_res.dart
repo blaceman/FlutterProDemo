@@ -6,6 +6,10 @@ const zhCnRes = {
   SR.mine: '我的',
   SR.login: '登录',
   SR.input: '请输入',
+  SR.success: '成功',
   SR.phoneNum: '手机号',
   SR.code: '验证码',
+  SR.tipPhoneNum: '手机号码不正确',
+  SR.tipCode: '验证码不正确',
+  SR.alreadyLogin: '已登录',
 };

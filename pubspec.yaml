@@ -49,6 +49,9 @@ dependencies:
   path_provider: 2.1.1
   #日期格式化等
   intl: 0.18.0
+  #网络请求框架
+  dio: 5.2.1+1
+
 
 #UI
   modal_bottom_sheet: 3.0.0-pre

@@ -1,7 +1,9 @@
 part of widgets;
 
 abstract class CustomToast {
-  static TransitionBuilder init() {
+  static TransitionBuilder init({
+    required TransitionBuilder builder,
+  }) {
     EasyLoading.instance
       ..displayDuration = const Duration(milliseconds: 2000)
       ..indicatorType = EasyLoadingIndicatorType.ring
@@ -33,7 +35,7 @@ abstract class CustomToast {
       ..successWidget = const CustomToastSuccess()
       ..errorWidget = const CustomToastFail()
       ..indicatorWidget = const CustomLoadingIndicator();
-    return EasyLoading.init();
+    return EasyLoading.init(builder: builder);
   }
 
   static void text(

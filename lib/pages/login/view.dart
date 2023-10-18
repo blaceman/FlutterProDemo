@@ -29,20 +29,22 @@ class LoginPage extends GetView<LoginController> {
                 SizedBox(height: 60.h),
                 BuildInput(
                   label: Text(SR.phoneNum.tr),
-                  // controller: controller.phoneInput,
+                  controller: controller.phoneInput,
                 ),
                 SizedBox(height: 30.w),
                 Stack(
                   children: [
                     BuildInput(
                       label: Text(SR.code.tr),
-                      // controller: controller.codeInput,
+                      controller: controller.codeInput,
                     ),
                   ],
                 ),
                 SizedBox(height: 30.w),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.onLogin();
+                  },
                   child: Text(SR.login.tr),
                 ),
               ],

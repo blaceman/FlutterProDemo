@@ -9,14 +9,17 @@ class HomeControllerBinding extends Bindings {
 
 class HomeController extends GetxController {
   @override
-  void onReady() {
-    // TODO: implement onReady
-    super.onReady();
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
   }
 
   @override
-  void onClose() {
-    // TODO: implement onClose
-    super.onClose();
+  void onReady() {
+    GlobalService.to.loginAction.addListener(() {
+      update();
+      Console.log('12222');
+    });
+    super.onReady();
   }
 }

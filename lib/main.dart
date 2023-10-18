@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/route_manager.dart';
-import 'package:project_demo/global_controller.dart';
+import 'package:get/get.dart';
 import 'package:project_demo/routers/index.dart';
+import 'package:project_demo/services/index.dart';
 import 'package:project_demo/string_res/index.dart';
 import 'package:project_demo/theme.dart';
 import 'package:project_demo/widgets/index.dart';
 
 void main() {
+  Get.put<GlobalService>(GlobalService());
+  Get.put<HttpService>(HttpService());
+
   runApp(const MyApp());
 }
 
@@ -33,9 +36,14 @@ class MyApp extends StatelessWidget {
                   translations: LanguageRes(),
                   locale: const Locale('zh', 'CN'),
                   fallbackLocale: const Locale('en', 'US'),
-                  initialBinding: GlobalControllerBinding(),
+                  // initialBinding: FirstControllerBinding(),
                   theme: ThemeData(colorSchemeSeed: AppTheme.primary),
-                  builder: CustomToast.init(),
+                  builder: CustomToast.init(builder: (context, child) {
+                    return ScrollConfiguration(
+                      behavior: _NoShadowScrollBehavior(),
+                      child: child ?? const Material(),
+                    );
+                  }),
                 ));
       },
     );
