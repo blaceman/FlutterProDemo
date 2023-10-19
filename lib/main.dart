@@ -8,9 +8,6 @@ import 'package:project_demo/theme.dart';
 import 'package:project_demo/widgets/index.dart';
 
 void main() {
-  Get.put<GlobalService>(GlobalService());
-  Get.put<HttpService>(HttpService());
-
   runApp(const MyApp());
 }
 
@@ -36,8 +33,10 @@ class MyApp extends StatelessWidget {
                   translations: LanguageRes(),
                   locale: const Locale('zh', 'CN'),
                   fallbackLocale: const Locale('en', 'US'),
-                  // initialBinding: FirstControllerBinding(),
-                  theme: ThemeData(colorSchemeSeed: AppTheme.primary),
+                  initialBinding: FirstControllerBinding(),
+                  theme: AppTheme.light,
+                  darkTheme: AppTheme.dark,
+                  themeMode: AppTheme.mode,
                   builder: CustomToast.init(builder: (context, child) {
                     return ScrollConfiguration(
                       behavior: _NoShadowScrollBehavior(),
@@ -81,5 +80,13 @@ class _NoShadowScrollBehavior extends ScrollBehavior {
           child: child,
         );
     }
+  }
+}
+
+class FirstControllerBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.put<GlobalService>(GlobalService());
+    Get.put<HttpService>(HttpService());
   }
 }

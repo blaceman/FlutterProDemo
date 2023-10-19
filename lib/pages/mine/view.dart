@@ -16,8 +16,11 @@ class MinePage extends StatelessWidget {
                   isInset: false,
                   children: [
                     CustomCell(
-                      title: const Text('账号与安全'),
-                      onTap: () {},
+                      title: const Text('切换主题'),
+                      onTap: () {
+                        Get.changeThemeMode(
+                            Get.isDarkMode ? ThemeMode.light : ThemeMode.dark);
+                      },
                     ),
                     CustomCell(
                       title: const Text('清除缓存'),

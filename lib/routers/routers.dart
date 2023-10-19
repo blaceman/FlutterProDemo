@@ -14,12 +14,10 @@ abstract class Routers {
     GetPage(
       name: home,
       page: () => const HomePage(),
-      binding: HomeControllerBinding(),
     ),
     GetPage(
       name: mine,
       page: () => const MinePage(),
-      binding: MineControllerBinding(),
     ),
     GetPage(
       name: login,
