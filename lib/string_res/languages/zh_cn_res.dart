@@ -17,5 +17,5 @@ const zhCnRes = {
   SR.userInfo: '用户信息（路由拦截）',
   SR.outLogin: '退出登录',
   SR.someTip: '提示语',
-  SR.download: '我的下载'
+  SR.download: '我的下载 (tableview数据加载)',
 };
