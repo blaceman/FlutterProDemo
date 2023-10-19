@@ -9,27 +9,26 @@ class MinePage extends StatelessWidget {
         init: MineController(),
         builder: (controller) => Scaffold(
               appBar: AppBar(
-                title: const Text('我的'),
+                title: Text(SR.mine.tr),
               ),
               body: SingleChildScrollView(
                 child: CustomCellGroup(
                   isInset: false,
                   children: [
                     CustomCell(
-                      title: const Text('切换主题'),
+                      title: Text(SR.changeTheme.tr),
                       onTap: () {
-                        Get.changeThemeMode(
-                            Get.isDarkMode ? ThemeMode.light : ThemeMode.dark);
+                        controller.changeTheme();
                       },
                     ),
                     CustomCell(
-                      title: const Text('清除缓存'),
+                      title: Text(SR.changeLanguage.tr),
                       value: const Text(''),
                       onTap: () async {
-                        // Handle clearing cache here
-                        CustomToast.success('清除缓存成功');
+                        controller.changeLanguage();
+                        // CustomToast.success('清除缓存成功');
                         // CacheUtils.clearApplicationCache();
-                        await CacheUtils.clearApplicationCache();
+                        // await CacheUtils.clearApplicationCache();
                       },
                     ),
                     const CustomCell(

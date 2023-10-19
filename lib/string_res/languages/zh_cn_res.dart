@@ -12,4 +12,6 @@ const zhCnRes = {
   SR.tipPhoneNum: '手机号码不正确',
   SR.tipCode: '验证码不正确',
   SR.alreadyLogin: '已登录',
+  SR.changeTheme: '切换主题',
+  SR.changeLanguage: '切换语言',
 };

@@ -11,5 +11,7 @@ class SR {
   static const tipPhoneNum = 'tipPhoneNum';
   static const tipCode = 'tipCode';
   static const success = 'success';
-  static const alreadyLogin = 'already login';
+  static const alreadyLogin = 'alreadyLogin';
+  static const changeTheme = 'changeTheme';
+  static const changeLanguage = 'changeLanguage';
 }

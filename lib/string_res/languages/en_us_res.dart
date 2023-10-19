@@ -11,5 +11,7 @@ const enUSRes = {
   SR.code: 'code',
   SR.tipPhoneNum: 'the phone number is incorrect',
   SR.tipCode: 'the code is incorrect',
-  SR.alreadyLogin: 'already login'
+  SR.alreadyLogin: 'already login',
+  SR.changeTheme: 'change theme',
+  SR.changeLanguage: 'change language',
 };

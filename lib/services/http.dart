@@ -260,8 +260,8 @@ class _TokenQueuedInterceptor extends QueuedInterceptor {
 
   @override
   void onError(DioException err, ErrorInterceptorHandler handler) async {
-    final response = err.response;
-    final statusCode = response?.statusCode;
+    // final response = err.response;
+    // final statusCode = response?.statusCode;
     // final tokenStr = StorageService.to.getString(kLocalToken);
     // if (statusCode == 401 && tokenStr.isNotEmpty) {
     //   final token = TokenModel.fromString(tokenStr);
