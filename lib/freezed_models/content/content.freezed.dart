@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'freezed.dart';
+part of 'content.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,34 +14,46 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Freezed _$FreezedFromJson(Map<String, dynamic> json) {
-  return _Freezed.fromJson(json);
+Content _$ContentFromJson(Map<String, dynamic> json) {
+  return _Content.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Freezed {
+mixin _$Content {
   @JsonKey(name: "id")
   int get id => throw _privateConstructorUsedError;
+  @JsonKey(name: "id")
+  set id(int value) => throw _privateConstructorUsedError;
   @JsonKey(name: "name")
   String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: "name")
+  set name(String value) => throw _privateConstructorUsedError;
   @JsonKey(name: "categoryName")
   String get categoryName => throw _privateConstructorUsedError;
+  @JsonKey(name: "categoryName")
+  set categoryName(String value) => throw _privateConstructorUsedError;
   @JsonKey(name: "coverPicFullName")
   String get coverPicFullName => throw _privateConstructorUsedError;
+  @JsonKey(name: "coverPicFullName")
+  set coverPicFullName(String value) => throw _privateConstructorUsedError;
   @JsonKey(name: "viewCount")
   int get viewCount => throw _privateConstructorUsedError;
+  @JsonKey(name: "viewCount")
+  set viewCount(int value) => throw _privateConstructorUsedError;
   @JsonKey(name: "favoriteCount")
   int get favoriteCount => throw _privateConstructorUsedError;
+  @JsonKey(name: "favoriteCount")
+  set favoriteCount(int value) => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FreezedCopyWith<Freezed> get copyWith => throw _privateConstructorUsedError;
+  $ContentCopyWith<Content> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FreezedCopyWith<$Res> {
-  factory $FreezedCopyWith(Freezed value, $Res Function(Freezed) then) =
-      _$FreezedCopyWithImpl<$Res, Freezed>;
+abstract class $ContentCopyWith<$Res> {
+  factory $ContentCopyWith(Content value, $Res Function(Content) then) =
+      _$ContentCopyWithImpl<$Res, Content>;
   @useResult
   $Res call(
       {@JsonKey(name: "id") int id,
@@ -53,9 +65,9 @@ abstract class $FreezedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FreezedCopyWithImpl<$Res, $Val extends Freezed>
-    implements $FreezedCopyWith<$Res> {
-  _$FreezedCopyWithImpl(this._value, this._then);
+class _$ContentCopyWithImpl<$Res, $Val extends Content>
+    implements $ContentCopyWith<$Res> {
+  _$ContentCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -102,10 +114,10 @@ class _$FreezedCopyWithImpl<$Res, $Val extends Freezed>
 }
 
 /// @nodoc
-abstract class _$$FreezedImplCopyWith<$Res> implements $FreezedCopyWith<$Res> {
-  factory _$$FreezedImplCopyWith(
-          _$FreezedImpl value, $Res Function(_$FreezedImpl) then) =
-      __$$FreezedImplCopyWithImpl<$Res>;
+abstract class _$$ContentImplCopyWith<$Res> implements $ContentCopyWith<$Res> {
+  factory _$$ContentImplCopyWith(
+          _$ContentImpl value, $Res Function(_$ContentImpl) then) =
+      __$$ContentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -118,11 +130,11 @@ abstract class _$$FreezedImplCopyWith<$Res> implements $FreezedCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FreezedImplCopyWithImpl<$Res>
-    extends _$FreezedCopyWithImpl<$Res, _$FreezedImpl>
-    implements _$$FreezedImplCopyWith<$Res> {
-  __$$FreezedImplCopyWithImpl(
-      _$FreezedImpl _value, $Res Function(_$FreezedImpl) _then)
+class __$$ContentImplCopyWithImpl<$Res>
+    extends _$ContentCopyWithImpl<$Res, _$ContentImpl>
+    implements _$$ContentImplCopyWith<$Res> {
+  __$$ContentImplCopyWithImpl(
+      _$ContentImpl _value, $Res Function(_$ContentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -135,7 +147,7 @@ class __$$FreezedImplCopyWithImpl<$Res>
     Object? viewCount = null,
     Object? favoriteCount = null,
   }) {
-    return _then(_$FreezedImpl(
+    return _then(_$ContentImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -166,8 +178,8 @@ class __$$FreezedImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$FreezedImpl implements _Freezed {
-  const _$FreezedImpl(
+class _$ContentImpl implements _Content {
+  _$ContentImpl(
       {@JsonKey(name: "id") required this.id,
       @JsonKey(name: "name") required this.name,
       @JsonKey(name: "categoryName") required this.categoryName,
@@ -175,101 +187,91 @@ class _$FreezedImpl implements _Freezed {
       @JsonKey(name: "viewCount") required this.viewCount,
       @JsonKey(name: "favoriteCount") required this.favoriteCount});
 
-  factory _$FreezedImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FreezedImplFromJson(json);
+  factory _$ContentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ContentImplFromJson(json);
 
   @override
   @JsonKey(name: "id")
-  final int id;
+  int id;
   @override
   @JsonKey(name: "name")
-  final String name;
+  String name;
   @override
   @JsonKey(name: "categoryName")
-  final String categoryName;
+  String categoryName;
   @override
   @JsonKey(name: "coverPicFullName")
-  final String coverPicFullName;
+  String coverPicFullName;
   @override
   @JsonKey(name: "viewCount")
-  final int viewCount;
+  int viewCount;
   @override
   @JsonKey(name: "favoriteCount")
-  final int favoriteCount;
+  int favoriteCount;
 
   @override
   String toString() {
-    return 'Freezed(id: $id, name: $name, categoryName: $categoryName, coverPicFullName: $coverPicFullName, viewCount: $viewCount, favoriteCount: $favoriteCount)';
+    return 'Content(id: $id, name: $name, categoryName: $categoryName, coverPicFullName: $coverPicFullName, viewCount: $viewCount, favoriteCount: $favoriteCount)';
   }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FreezedImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.categoryName, categoryName) ||
-                other.categoryName == categoryName) &&
-            (identical(other.coverPicFullName, coverPicFullName) ||
-                other.coverPicFullName == coverPicFullName) &&
-            (identical(other.viewCount, viewCount) ||
-                other.viewCount == viewCount) &&
-            (identical(other.favoriteCount, favoriteCount) ||
-                other.favoriteCount == favoriteCount));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, categoryName,
-      coverPicFullName, viewCount, favoriteCount);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$FreezedImplCopyWith<_$FreezedImpl> get copyWith =>
-      __$$FreezedImplCopyWithImpl<_$FreezedImpl>(this, _$identity);
+  _$$ContentImplCopyWith<_$ContentImpl> get copyWith =>
+      __$$ContentImplCopyWithImpl<_$ContentImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$FreezedImplToJson(
+    return _$$ContentImplToJson(
       this,
     );
   }
 }
 
-abstract class _Freezed implements Freezed {
-  const factory _Freezed(
-      {@JsonKey(name: "id") required final int id,
-      @JsonKey(name: "name") required final String name,
-      @JsonKey(name: "categoryName") required final String categoryName,
-      @JsonKey(name: "coverPicFullName") required final String coverPicFullName,
-      @JsonKey(name: "viewCount") required final int viewCount,
-      @JsonKey(name: "favoriteCount")
-      required final int favoriteCount}) = _$FreezedImpl;
+abstract class _Content implements Content {
+  factory _Content(
+          {@JsonKey(name: "id") required int id,
+          @JsonKey(name: "name") required String name,
+          @JsonKey(name: "categoryName") required String categoryName,
+          @JsonKey(name: "coverPicFullName") required String coverPicFullName,
+          @JsonKey(name: "viewCount") required int viewCount,
+          @JsonKey(name: "favoriteCount") required int favoriteCount}) =
+      _$ContentImpl;
 
-  factory _Freezed.fromJson(Map<String, dynamic> json) = _$FreezedImpl.fromJson;
+  factory _Content.fromJson(Map<String, dynamic> json) = _$ContentImpl.fromJson;
 
   @override
   @JsonKey(name: "id")
   int get id;
+  @JsonKey(name: "id")
+  set id(int value);
   @override
   @JsonKey(name: "name")
   String get name;
+  @JsonKey(name: "name")
+  set name(String value);
   @override
   @JsonKey(name: "categoryName")
   String get categoryName;
+  @JsonKey(name: "categoryName")
+  set categoryName(String value);
   @override
   @JsonKey(name: "coverPicFullName")
   String get coverPicFullName;
+  @JsonKey(name: "coverPicFullName")
+  set coverPicFullName(String value);
   @override
   @JsonKey(name: "viewCount")
   int get viewCount;
+  @JsonKey(name: "viewCount")
+  set viewCount(int value);
   @override
   @JsonKey(name: "favoriteCount")
   int get favoriteCount;
+  @JsonKey(name: "favoriteCount")
+  set favoriteCount(int value);
   @override
   @JsonKey(ignore: true)
-  _$$FreezedImplCopyWith<_$FreezedImpl> get copyWith =>
+  _$$ContentImplCopyWith<_$ContentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'freezed.dart';
+part of 'content.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FreezedImpl _$$FreezedImplFromJson(Map<String, dynamic> json) =>
-    _$FreezedImpl(
+_$ContentImpl _$$ContentImplFromJson(Map<String, dynamic> json) =>
+    _$ContentImpl(
       id: json['id'] as int,
       name: json['name'] as String,
       categoryName: json['categoryName'] as String,
@@ -16,7 +16,7 @@ _$FreezedImpl _$$FreezedImplFromJson(Map<String, dynamic> json) =>
       favoriteCount: json['favoriteCount'] as int,
     );
 
-Map<String, dynamic> _$$FreezedImplToJson(_$FreezedImpl instance) =>
+Map<String, dynamic> _$$ContentImplToJson(_$ContentImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
