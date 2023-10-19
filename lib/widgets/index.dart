@@ -27,6 +27,7 @@ part 'dialog.dart';
 part 'empty_data.dart';
 part 'image.dart';
 part 'input.dart';
+part 'list_cell.dart';
 part 'pull_scroll_view.dart';
 part 'scaffold.dart';
 part 'tag.dart';

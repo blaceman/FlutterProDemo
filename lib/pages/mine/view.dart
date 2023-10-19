@@ -31,13 +31,24 @@ class MinePage extends StatelessWidget {
                         // await CacheUtils.clearApplicationCache();
                       },
                     ),
-                    const CustomCell(
-                      title: Text('版本信息'),
-                      value: Text('1.0.1'),
+                    CustomCell(
+                      title: Text(SR.userInfo.tr),
+                      onTap: () {
+                        Get.toNamed(Routers.userInfo);
+                      },
                     ),
-                    CustomCell(title: const Text('网络诊断'), onTap: () {}),
-                    CustomCell(title: const Text('隐私政策'), onTap: () {}),
-                    CustomCell(title: const Text('用户协议'), onTap: () {}),
+                    CustomCell(
+                        title: Text(SR.someTip.tr),
+                        onTap: () {
+                          controller.showTip(context);
+                        }),
+                    CustomCell(
+                      title: Text(SR.download.tr),
+                      onTap: () {
+                        Get.toNamed(Routers.download);
+                      },
+                    ),
+                    // CustomCell(title: const Text('用户协议'), onTap: () {}),
                   ],
                 ),
               ),
@@ -45,7 +56,7 @@ class MinePage extends StatelessWidget {
                   ? null
                   : CustomBottomAppBar(
                       child: CustomButton(
-                        child: const Text('退出登录'),
+                        child: Text(SR.outLogin.tr),
                         onPressed: () {
                           CustomDialog.show<bool>(
                             context: context,

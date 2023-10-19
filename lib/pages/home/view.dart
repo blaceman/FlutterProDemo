@@ -27,10 +27,10 @@ class HomePage extends StatelessWidget {
                             Get.toNamed(Routers.login);
                           }
                         },
-                        // style: ButtonStyle(
-                        //     backgroundColor: GlobalService.to.isLogin
-                        //         ? MaterialStateProperty.all(Colors.grey)
-                        //         : MaterialStateProperty.all(AppTheme.primary)),
+                        style: ButtonStyle(
+                            backgroundColor: GlobalService.to.isLogin
+                                ? MaterialStateProperty.all(Colors.grey)
+                                : MaterialStateProperty.all(AppTheme.primary)),
                         child: Text(GlobalService.to.isLogin
                             ? SR.alreadyLogin
                             : SR.login.tr)),

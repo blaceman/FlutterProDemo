@@ -14,4 +14,8 @@ class SR {
   static const alreadyLogin = 'alreadyLogin';
   static const changeTheme = 'changeTheme';
   static const changeLanguage = 'changeLanguage';
+  static const userInfo = 'userInfo';
+  static const outLogin = 'outLogin';
+  static const someTip = 'someTip';
+  static const download = 'download';
 }

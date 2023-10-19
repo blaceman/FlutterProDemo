@@ -5,6 +5,8 @@ abstract class Routers {
   static const String login = "/login";
   static const String mine = "/mine";
   static const String home = "/home";
+  static const String userInfo = "/user_info";
+  static const String download = "/download";
 
   static final List<GetPage> getPages = [
     GetPage(
@@ -23,6 +25,17 @@ abstract class Routers {
       name: login,
       page: () => const LoginPage(),
       binding: LoginControllerBinding(),
+    ),
+    GetPage(
+      name: userInfo,
+      page: () => const UserInfoPage(),
+      binding: UserInfoControllerBinding(),
+      middlewares: [LoginMiddleware()],
+    ),
+    GetPage(
+      name: download,
+      page: () => const MyDownLoadPage(),
+      binding: MyDownloadControllerBinding(),
     ),
   ];
 }

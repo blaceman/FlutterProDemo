@@ -14,4 +14,8 @@ const enUSRes = {
   SR.alreadyLogin: 'already login',
   SR.changeTheme: 'change theme',
   SR.changeLanguage: 'change language',
+  SR.userInfo: 'user info',
+  SR.outLogin: 'out login',
+  SR.someTip: 'some tip',
+  SR.download: 'download',
 };

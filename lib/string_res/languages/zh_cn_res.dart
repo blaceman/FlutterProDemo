@@ -14,4 +14,8 @@ const zhCnRes = {
   SR.alreadyLogin: '已登录',
   SR.changeTheme: '切换主题',
   SR.changeLanguage: '切换语言',
+  SR.userInfo: '用户信息（路由拦截）',
+  SR.outLogin: '退出登录',
+  SR.someTip: '提示语',
+  SR.download: '我的下载'
 };
