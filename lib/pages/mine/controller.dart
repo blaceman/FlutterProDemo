@@ -66,4 +66,28 @@ class MineController extends GetxController {
     //   ),
     // ));
   }
+
+  void freezedUse() {
+    Get.defaultDialog(
+      title: "",
+      middleText: "看项目freezed_models/content/content.dart文件",
+      titleStyle: const TextStyle(color: Colors.blueGrey),
+      middleTextStyle: const TextStyle(color: Colors.blueGrey),
+    );
+    //
+    //    // var cont = Content(
+    //       id: 111,
+    //       name: '',
+    //       categoryName: '',
+    //       coverPicFullName: '',
+    //       viewCount: 2,
+    //       favoriteCount: 3);
+    //   cont.name = '222';//定义@unfreezed为可变使得name能改变
+    //   var cont2 = cont.copyWith(name: '333');//copyWith方法
+    //   print(cont == cont2); // 不可变有hashCode方法，可变则没有hashCode方法
+    //   var cont3 = Content.fromJson({});//序列化
+    //   cont3.toJson();//反序列化
+  }
+
+  void hiveUse() {}
 }

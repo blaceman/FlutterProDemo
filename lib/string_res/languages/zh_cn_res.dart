@@ -18,4 +18,6 @@ const zhCnRes = {
   SR.outLogin: '退出登录',
   SR.someTip: '提示语',
   SR.download: '我的下载 (tableview数据加载)',
+  SR.freezedModel: 'freezed模型用法',
+  SR.hiveArchive: 'hive归档用法',
 };

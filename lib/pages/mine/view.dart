@@ -48,7 +48,16 @@ class MinePage extends StatelessWidget {
                         Get.toNamed(Routers.download);
                       },
                     ),
-                    // CustomCell(title: const Text('用户协议'), onTap: () {}),
+                    CustomCell(
+                        title: Text(SR.freezedModel.tr),
+                        onTap: () {
+                          controller.freezedUse();
+                        }),
+                    CustomCell(
+                        title: Text(SR.hiveArchive.tr),
+                        onTap: () {
+                          controller.hiveUse();
+                        }),
                   ],
                 ),
               ),

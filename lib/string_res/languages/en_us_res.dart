@@ -18,4 +18,6 @@ const enUSRes = {
   SR.outLogin: 'out login',
   SR.someTip: 'some tip',
   SR.download: 'download',
+  SR.freezedModel: 'freezed model',
+  SR.hiveArchive: 'hive archive',
 };

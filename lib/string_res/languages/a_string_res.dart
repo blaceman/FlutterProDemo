@@ -18,4 +18,6 @@ class SR {
   static const outLogin = 'outLogin';
   static const someTip = 'someTip';
   static const download = 'download';
+  static const freezedModel = 'freezedModel';
+  static const hiveArchive = 'hiveArchive';
 }

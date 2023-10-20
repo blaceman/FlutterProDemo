@@ -25,8 +25,6 @@ class MyDownloadController extends GetxController {
   @override
   void onClose() {
     refreshController.dispose();
-    Freezed.fromJson({});
-    // freezedToJson();
     super.onClose();
   }
 

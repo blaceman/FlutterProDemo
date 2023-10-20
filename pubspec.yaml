@@ -67,6 +67,12 @@ dependencies:
   #freezed代码生成器执行:dart run build_runner build
   freezed_annotation: ^2.4.1
 
+#@freezed 注解替换为 @unfreezed ：定义不可变的类或者一个可变的类
+#@Freezed(makeCollectionsUnmodifiable: false)：允许对 List/Map/Set 进行修改
+#生成==/hashCode方法。这使您的类变成可哈希和可比较的,可以使用在Set和Map中，在不可变类。
+#生成copyWith方法。这允许您轻松创建当前对象的深浅拷贝,并在必要时更改某些属性。
+#生成toJson和fromJson方法。这使您的类可以轻松与JSON序列化和反序列化。
+
 
 dev_dependencies:
   flutter_test:
